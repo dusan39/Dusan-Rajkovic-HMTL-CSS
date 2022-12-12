@@ -1,0 +1,405 @@
+/* Default CSS Rules */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;;
+}
+
+/* Start of the presentation section */
+.title{
+  padding-bottom: 2%;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.memoji{
+  width: 370px;
+}
+
+.memoji-container{
+  display: flex;
+  justify-content: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,97,121,1) 29%, rgba(217,217,217,1) 100%);
+}
+
+.text-center{
+  display: flex;
+  justify-content: center;
+  border-top: solid 1px rgb(217, 217, 217);
+  padding: 3% 5%;
+  margin-bottom: 0;
+}
+
+.first-info{
+  font-weight: 300;
+}
+
+.nomos,
+.itis,
+.agricam{
+  text-decoration: underline;
+  color: black;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.nomos:hover,
+.itis:hover,
+.agricam:hover{
+  opacity: 0.7;
+}
+/* End of the presentation section */
+
+
+/* Start of my resume section */
+.resume{
+  padding: 3% 5%;
+  border-top: solid 1px rgb(217, 217, 217);
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.resume-title-container{
+  display: flex;
+  justify-content: center;
+}
+
+.resume-title{
+  padding-bottom: 2%;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.curriculum-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3%;
+}
+
+.btn-primary{
+  margin-top: 0 !important;
+}
+
+.curriculum-pdf,
+.btn-primary,
+.sendMail{
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 6px 8px;
+  margin-top: 16px;
+  color: white;
+  background-color: #005F90;
+  margin-left: 5px;
+  transition: all 0.3s;
+}
+
+.curriculum-pdf:hover,
+.btn-primary:hover,
+.sendMail:hover{
+  color: #005F90;
+  background-color: white;
+}
+/* End of my resume section */
+
+
+/* Start of routine section */
+.routine{
+  display: inline-flexbox;
+  align-items: center;
+  border-top: solid 1px rgb(217, 217, 217);
+  border-bottom: solid 1px rgb(217, 217, 217);
+  padding: 3% 5%;
+}
+
+.routine-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.routine-title-container{
+  display: flex;
+  justify-content: center;
+}
+
+.routine-title{
+  font-weight: 400;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 0;
+}
+
+.graphic-container{
+  display: flex;
+  justify-content: center;
+}
+
+.graphic{
+  max-width: 80%;
+}
+
+.list-group-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.routine-description{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* End of routine section */
+
+/* Start of projects section */
+.projects{
+  padding: 3% 5%;
+  background-color: #fafafa;
+  border-bottom: solid 1px rgb(217, 217, 217);
+}
+
+.projects-title-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-info{
+  text-align: center;
+  padding-top: 20px;
+}
+/* End of projects section */
+
+/* Start of contact-me section */
+.contact-me{
+  padding: 3% 5%;
+}
+
+.contact-me-title-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+
+.line1,
+.line2,
+.line3{
+  display: flex;
+  justify-content: center;
+}
+
+.group{ 
+  position:relative; 
+  margin-bottom:45px; 
+}
+
+input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+.name{
+  margin-right: 50px;
+}
+
+.message{
+  width: 650px;
+}
+
+input:focus{
+  outline:none;
+}
+
+.label-contact{
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label{
+  top:-20px;
+  font-size:14px;
+  color:#005F90;
+}
+
+.bar{
+  position:relative;
+  display:block;
+  width:300px; 
+}
+
+.message-bar{
+  position:relative;
+  display:block;
+  width:650px;  
+}
+
+.bar:before, 
+.bar:after,
+.message-bar:before,
+.message-bar:after{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background: #005F90; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.bar:before,
+.message-bar:before{
+  left:50%;
+}
+
+.bar:after,
+.message-bar:after{
+  right:50%; 
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after,
+input:focus ~ .message-bar:before,
+input:focus ~ .message-bar:after{
+  width:50%;
+}
+/* End of contact-me section */
+
+/* Start of footer section */
+.half-circle{
+  width: 100px;
+  height: 50px;
+  background-color: #fafafa;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 2px solid rgb(220, 220, 220);
+  border-bottom: 0;
+  transition: all 0.3s;
+  font-size: 26px;
+}
+
+.top-link-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.half-circle:hover{
+  opacity: 0.7;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid rgb(220, 220, 220);
+  padding: 2% 5%;
+  background-color: #fafafa;
+  font-size: 20px;
+}
+/* end of footer section */
+
+@media (min-width:426px) and (max-width:870px){
+
+}
+
+@media (max-width: 425px){
+  .presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .memoji{
+    width: 300px;
+  }
+
+  .text-center{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 0px;
+  }
+
+  .resume{
+    padding: 20px 8%;
+  }
+
+  .resume-title{
+    padding-bottom: 5%;
+  }
+
+  .curriculum-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .curriculum-pdf{
+    margin-top: 2%;
+  }
+
+  .routine{
+    padding: 20px 8%;
+  }
+
+  .routine-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .routine-description{
+    padding-top: 5%;
+  }
+
+  .input-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .line1,
+  .line2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #email_id,
+  #fullName,
+  #message{
+    width: 300px;
+    margin-right: 0px;
+  }
+
+  .bar,
+  .message-bar{
+    position:relative;
+    display:block; 
+    width:300px; 
+  }
+
+}
