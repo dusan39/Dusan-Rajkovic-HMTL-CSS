@@ -388,9 +388,9 @@ footer{
     flex-direction: column;
   }
 
-  #email_id,
-  #fullName,
-  #message{
+  .email,
+  .name,
+  .message{
     width: 300px;
     margin-right: 0px;
   }
