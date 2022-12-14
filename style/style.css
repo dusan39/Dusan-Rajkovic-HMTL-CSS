@@ -79,12 +79,12 @@
   padding-top: 3%;
 }
 
-.btn-primary{
+.more-about-me{
   margin-top: 0 !important;
 }
 
 .curriculum-pdf,
-.btn-primary,
+.more-about-me,
 .sendMail{
   border: 1px solid;
   border-radius: 5px;
@@ -97,7 +97,7 @@
 }
 
 .curriculum-pdf:hover,
-.btn-primary:hover,
+.more-about-me:hover,
 .sendMail:hover{
   color: #005F90;
   background-color: white;
@@ -322,6 +322,62 @@ footer{
 /* end of footer section */
 
 @media (min-width:426px) and (max-width:870px){
+  .resume{
+    padding: 20px 8%;
+  }
+
+  .resume-title{
+    padding-bottom: 5%;
+  }
+
+  .curriculum-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .curriculum-pdf{
+    margin-top: 2%;
+  }
+
+  .routine{
+    padding: 20px 8%;
+  }
+
+  .routine-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .routine-description{
+    padding-top: 5%;
+  }
+
+  .graphic{
+    max-width: 70%;
+  }
+
+  .input-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .line1,
+  .line2{
+    flex-direction: column !important;
+  }
+ 
+  .group{
+    width: 300px;
+  }
+
+  .email,
+  .name,
+  .message{
+    justify-content: center;
+    width: 300px;
+    margin-right: 0px !important;
+  }
 
 }
 
@@ -343,6 +399,13 @@ footer{
     padding-left: 8%;
     padding-right: 8%;
     margin-bottom: 0px;
+  }
+
+  .curriculum-pdf:active,
+  .more-about-me:active,
+  .sendMail:active{
+   color: #005F90;
+   background-color: white;
   }
 
   .resume{
@@ -376,6 +439,10 @@ footer{
     padding-top: 5%;
   }
 
+  .graphic{
+    max-width: 100%;
+  }
+
   .input-container{
     display: flex;
     justify-content: center;
@@ -400,6 +467,10 @@ footer{
     position:relative;
     display:block; 
     width:300px; 
+  }
+
+  footer{
+    padding: 4% 5%;
   }
 
 }
