@@ -51,15 +51,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 2%;
-} 
-
-#tech,
-#audi-a3,
-#bernabeu{
-  width: 60%;
-  border-radius: 5px;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
 
 .top-link-container{

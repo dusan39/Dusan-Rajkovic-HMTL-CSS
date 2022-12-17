@@ -469,6 +469,10 @@ footer{
     width:300px; 
   }
 
+  .half-circle{
+    text-decoration: none;
+  }
+
   footer{
     padding: 4% 5%;
   }
