@@ -293,12 +293,13 @@ input:focus ~ .message-bar:after{
   width: 100px;
   height: 50px;
   background-color: #fafafa;
+  font-size: 26px;
+  text-decoration: none;
   border-top-left-radius: 110px;
   border-top-right-radius: 110px;
   border: 2px solid rgb(220, 220, 220);
   border-bottom: 0;
   transition: all 0.3s;
-  font-size: 26px;
 }
 
 .top-link-container{
@@ -377,6 +378,13 @@ footer{
     justify-content: center;
     width: 300px;
     margin-right: 0px !important;
+  }
+
+  .bar,
+  .message-bar{
+    position:relative;
+    display:block; 
+    width:300px; 
   }
 
 }
