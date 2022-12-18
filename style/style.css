@@ -295,6 +295,7 @@ input:focus ~ .message-bar:after{
   background-color: #fafafa;
   font-size: 26px;
   text-decoration: none;
+  color: black;
   border-top-left-radius: 110px;
   border-top-right-radius: 110px;
   border: 2px solid rgb(220, 220, 220);
@@ -378,6 +379,11 @@ footer{
     justify-content: center;
     width: 300px;
     margin-right: 0px !important;
+  }
+
+  .half-circle{
+    text-decoration: none;
+    color: black;
   }
 
   .bar,
@@ -479,6 +485,7 @@ footer{
 
   .half-circle{
     text-decoration: none;
+    color: black;
   }
 
   footer{
