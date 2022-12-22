@@ -1,0 +1,668 @@
+/* Default CSS Rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Inizio Nav-Bar */
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  color: #FFF;
+  height: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logo {
+  width: 70px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.about-link,
+.skills-link,
+.routine-link,
+.project-link,
+.contact-link,
+.home-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.about-link:hover,
+.skills-link:hover,
+.routine-link:hover,
+.project-link:hover,
+.contact-link:hover,
+.home-link:hover {
+  color: white;
+  opacity: 0.6;
+}
+
+.instagram,
+.linkedin,
+.github,
+.mail {
+  transition: 0.3s;
+}
+
+.instagram:hover,
+.linkedin:hover,
+.github:hover,
+.mail:hover {
+  opacity: 0.7;
+}
+
+.li-social-links {
+  z-index: 10;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+/* Fine Nav-Bar */
+/* Start of the presentation section */
+.memoji-container {
+  display: flex;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 97, 121) 29%, rgb(217, 217, 217) 100%);
+}
+.memoji-container .memoji {
+  width: 370px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  border-top: solid 1px rgb(217, 217, 217);
+  padding: 3% 5%;
+  margin-bottom: 0;
+}
+.text-center .title {
+  padding-bottom: 2%;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.text-center .first-info {
+  font-weight: 300;
+}
+.text-center .more-about-me {
+  margin-top: 0;
+}
+
+.nomos,
+.itis,
+.agricam {
+  text-decoration: underline;
+  color: black;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.nomos:hover,
+.itis:hover,
+.agricam:hover {
+  opacity: 0.7;
+}
+
+/* End of the presentation section */
+/* Start of my resume section */
+.resume {
+  padding: 3% 5%;
+  border-top: solid 1px rgb(217, 217, 217);
+  background-color: #fafafa;
+  text-align: center;
+}
+.resume .resume-title-container {
+  display: flex;
+  justify-content: center;
+}
+.resume .resume-title-container .resume-title {
+  padding-bottom: 2%;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.resume .curriculum-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3%;
+}
+.resume .curriculum-container .cv-description {
+  margin-bottom: 0;
+}
+
+/* stile in comune per bottoni di diverse sezioni */
+.curriculum-pdf,
+.more-about-me,
+.button-repo-git,
+.sendMail {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 6px 8px;
+  margin-top: 16px;
+  color: white;
+  background-color: #005F90;
+  margin-left: 5px;
+  transition: all 0.3s;
+}
+
+.curriculum-pdf:hover,
+.more-about-me:hover,
+.button-repo-git:hover,
+.sendMail:hover {
+  color: #005F90;
+  background-color: white;
+}
+
+/* End of my resume section */
+/* Start of routine section */
+.routine {
+  display: inline-flexbox;
+  align-items: center;
+  border-top: solid 1px rgb(217, 217, 217);
+  border-bottom: solid 1px rgb(217, 217, 217);
+  padding: 3% 5%;
+}
+.routine .routine-title-container {
+  display: flex;
+  justify-content: center;
+}
+.routine .routine-title-container .routine-title {
+  font-weight: 400;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 0;
+}
+.routine .routine-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+.routine .routine-container .graphic-container {
+  display: flex;
+  justify-content: center;
+}
+.routine .routine-container .graphic-container .graphic {
+  max-width: 80%;
+}
+.routine .routine-container .list-group-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.routine .routine-container .list-group-container #rest {
+  background-color: #00366F;
+  color: white;
+}
+.routine .routine-container .list-group-container #S2I {
+  background-color: #00B3B6;
+  color: white;
+}
+.routine .routine-container .list-group-container #work {
+  background-color: #0089A7;
+  color: white;
+}
+.routine .routine-container .list-group-container #fun {
+  background-color: #005F90;
+  color: white;
+}
+.routine .routine-container .list-group-container #percentual {
+  margin-left: 50px;
+}
+.routine .routine-description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* End of routine section */
+/* Start of projects section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  background-color: #fafafa;
+  border-bottom: solid 1px rgb(217, 217, 217);
+}
+.projects .projects-title-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.projects .projects-container {
+  display: flex;
+  justify-content: space-around;
+}
+.projects .card {
+  width: 16rem;
+}
+.projects .card-title {
+  text-align: center;
+  font-weight: 700;
+}
+.projects .card-text {
+  text-align: center;
+  margin-bottom: 0;
+}
+.projects .container-button-repo-git {
+  display: flex;
+  justify-content: center;
+}
+.projects .projects-info {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* End of projects section */
+/* Start of contact-me section */
+.contact-me {
+  padding: 3% 5%;
+}
+.contact-me .contact-me-title-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+.contact-me .line1,
+.contact-me .line2,
+.contact-me .line3 {
+  display: flex;
+  justify-content: center;
+}
+.contact-me .group {
+  position: relative;
+  margin-bottom: 45px;
+}
+.contact-me input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+.contact-me .name {
+  margin-right: 50px;
+}
+.contact-me .message {
+  width: 650px;
+}
+.contact-me input:focus {
+  outline: none;
+}
+.contact-me .label-contact {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.contact-me input:focus ~ label, .contact-me input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #005F90;
+}
+.contact-me .bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+.contact-me .message-bar {
+  position: relative;
+  display: block;
+  width: 650px;
+}
+.contact-me .bar:before,
+.contact-me .bar:after,
+.contact-me .message-bar:before,
+.contact-me .message-bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #005F90;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.contact-me .bar:before,
+.contact-me .message-bar:before {
+  left: 50%;
+}
+.contact-me .bar:after,
+.contact-me .message-bar:after {
+  right: 50%;
+}
+.contact-me input:focus ~ .bar:before,
+.contact-me input:focus ~ .bar:after,
+.contact-me input:focus ~ .message-bar:before,
+.contact-me input:focus ~ .message-bar:after {
+  width: 50%;
+}
+
+/* End of contact-me section */
+/* Start of footer section */
+.half-circle {
+  width: 100px;
+  height: 50px;
+  background-color: #fafafa;
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  border: 2px solid rgb(220, 220, 220);
+  border-bottom: 0;
+  transition: all 0.3s;
+}
+
+.top-link-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+.top-link-container .half-circle:hover {
+  opacity: 0.7;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid rgb(220, 220, 220);
+  padding: 2% 5%;
+  background-color: #fafafa;
+  font-size: 20px;
+}
+
+/* end of footer section */
+/* Media query only for responsive navbar */
+@media (max-width: 870px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 3.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: rgb(19, 18, 18);
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .logo {
+    width: 70px;
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+  }
+  .instagram,
+.linkedin,
+.github,
+.mail {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .projects-info {
+    padding-top: 0 !important;
+  }
+  .input-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Media query for tablet */
+@media (min-width: 426px) and (max-width: 870px) {
+  .resume {
+    padding: 20px 8%;
+  }
+  .resume-title {
+    padding-bottom: 5%;
+  }
+  .curriculum-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .curriculum-pdf {
+    margin-top: 2%;
+  }
+  .routine {
+    padding: 20px 8%;
+  }
+  .routine .routine-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .routine .routine-description {
+    padding-top: 5%;
+  }
+  .routine .graphic {
+    max-width: 70%;
+  }
+  .input-container {
+    display: flex;
+    justify-content: center;
+  }
+  .line1,
+.line2 {
+    flex-direction: column !important;
+  }
+  .group {
+    width: 300px;
+  }
+  .email,
+.name,
+.message {
+    justify-content: center;
+    width: 300px !important;
+    margin-right: 0px !important;
+  }
+  .half-circle {
+    text-decoration: none;
+    color: black;
+  }
+  .bar,
+.message-bar {
+    position: relative;
+    display: block;
+    width: 300px !important;
+  }
+}
+/* Media query for smartphone */
+@media (max-width: 425px) {
+  .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .memoji {
+    width: 300px;
+  }
+  .text-center {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 0px;
+  }
+  .curriculum-pdf:active,
+.more-about-me:active,
+.sendMail:active {
+    color: #005F90;
+    background-color: white;
+  }
+  .resume {
+    padding: 20px 8%;
+  }
+  .resume-title {
+    padding-bottom: 5%;
+  }
+  .curriculum-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .curriculum-pdf {
+    margin-top: 2%;
+  }
+  .routine {
+    padding: 20px 8%;
+  }
+  .routine .routine-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .routine .routine-description {
+    padding-top: 5%;
+  }
+  .routine .graphic {
+    max-width: 100%;
+  }
+  .line1,
+.line2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .email,
+.name,
+.message {
+    width: 300px !important;
+    margin-right: 0px !important;
+  }
+  .bar,
+.message-bar {
+    position: relative;
+    display: block;
+    width: 300px !important;
+  }
+  .half-circle {
+    text-decoration: none;
+    color: black;
+  }
+  footer {
+    padding: 4% 5%;
+  }
+}/*# sourceMappingURL=style.css.map */

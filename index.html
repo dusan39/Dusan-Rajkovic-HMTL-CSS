@@ -10,10 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Download Font Google -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Download Font Google -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Download Font Google -->
-  <link rel="stylesheet" href="assets/style/css/style.css" type="text/css"> <!-- Css generale pagina -->
-  <link rel="stylesheet" href="assets/style//css/navbar.css" type="text/css"> <!-- Css navbar -->
-  <link rel="stylesheet" href="assets/style/scss/style.scss"> <!-- SASS -->
-  <link rel="icon" href="favicon.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="assets/style/style.css" type="text/css"> <!-- Css generale pagina -->
+  <link rel="icon" href="assets/favicon.png"> <!-- Favicon -->
   <title>Dusan Rajkovic Portfolio</title>
 
   <!-- Open Graph / Facebook -->
@@ -258,17 +256,37 @@
     <div class="projects-title-container">
       <h2 class="projects-title">Projects</h2>
     </div>
-
       <div class="projects-container">
-        <div class="d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
+        <div class="card">
+          <img src="assets/images/anteprima-portfolio.png" class="card-img-top" alt="projects-HTML-CSS">
+          <div class="card-body">
+            <h5 class="card-title">HTML & CSS</h5>
+            <p class="card-text">Clicking on the button below you can find the repository of my portfolio on GitHub.</p>
+            <div class="container-button-repo-git">
+              <a href="https://github.com/dusan39/Rajkovic-Dusan-HMTL-CSS/tree/SASS" target="_blank" rel="noopener" class="">
+                <button type="button" class="button-repo-git">
+                  Repository GitHub
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/javascript-card.jpg" class="card-img-top" alt="projects-HTML-CSS">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript Base</h5>
+            <p class="card-text">This is the next project with JavaScript, nearly you can find the repository on GitHub.</p>
+            <div class="container-button-repo-git">
+              <a href="https://github.com/dusan39/Rajkovic-Dusan-HMTL-CSS/tree/SASS" target="_blank" rel="noopener" class="">
+                <button type="button" class="button-repo-git" disabled>
+                  Repository GitHub
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <p class="projects-info">This section is temporarly empty because i'm only at the beggining of my coding journey, but very soon here you'll be able to find some projects that I will upload during the Master of Start2Impact.</p>
-      </div>
+      <p class="projects-info">In this section you'll find some projects that I will upload during the Master of Start2Impact on GitHub.</p>
   </div>
 
   <div class="contact-me" id="contact-link">

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.education-experience .education-experience-title-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3%;
+}
+.education-experience .about-me-title {
+  font-weight: 700;
+}
+.education-experience .education,
+.education-experience .experience,
+.education-experience .passion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3% 5%;
+  border-bottom: solid 1px rgb(217, 217, 217);
+}
+.education-experience #li-java {
+  z-index: 1;
+}
+.education-experience .experience {
+  background-color: #fafafa;
+}
+.education-experience #experience-list {
+  padding-bottom: 3%;
+  background-color: #fafafa;
+}
+.education-experience .education-title,
+.education-experience .experience-title,
+.education-experience .passion-title {
+  font-weight: 600;
+}
+.education-experience .passion {
+  border-bottom: none;
+}
+.education-experience .card {
+  margin-right: 0;
+}
+.education-experience .technology,
+.education-experience .car,
+.education-experience .sport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.top-link-container {
+  margin-top: 0;
+}
+
+@media (min-width: 426px) and (max-width: 870px) {
+  .technology,
+.car,
+.sport {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #tech,
+#audi-a3,
+#bernabeu {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .technology,
+.car,
+.sport {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #tech,
+#audi-a3,
+#bernabeu {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}/*# sourceMappingURL=about-me.css.map */
