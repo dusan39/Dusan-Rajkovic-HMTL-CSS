@@ -10,17 +10,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Download Font Google -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Download Font Google -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Download Font Google -->
-  <link rel="stylesheet" href="style/style.css" type="text/css"> <!-- Css general rules -->
-  <link rel="stylesheet" href="style/navbar.css" type="text/css"> <!-- Css navbar -->
-  <link rel="stylesheet" href="style/about-me.css" type="text/css"> <!-- Css about me page -->
-  <link rel="icon" href="images/apple-icon.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="assets/style/css/style.css" type="text/css"> <!-- Css general rules -->
+  <link rel="stylesheet" href="assets/style/css/navbar.css" type="text/css"> <!-- Css navbar -->
+  <link rel="stylesheet" href="assets/style/css/about-me.css" type="text/css"> <!-- Css about me page -->
+  <link rel="stylesheet" href="assets/style/scss/style.scss"> <!-- SASS -->
+  <link rel="icon" href="favicon.png"> <!-- Favicon -->
   <title>About me</title>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dusan39.github.io/Rajkovic-Dusan-HMTL-CSS/">
+  <meta property="og:title" content="Dusan Rajkovic Portfolio">
+  <meta property="og:description" content="This is my Portfolio where you can find more informations about me and future projects.">
+  <meta property="og:image:secure_url" content="https://dusan39.github.io/Rajkovic-Dusan-HMTL-CSS/images/anteprima-portfolio.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dusan39.github.io/Rajkovic-Dusan-HMTL-CSS/">
+  <meta property="twitter:title" content="Dusan Rajkovic Portfolio">
+  <meta property="twitter:description" content="This is my Portfolio where you can find more informations about me and future projects.">
+  <meta property="twitter:image" content="https://dusan39.github.io/Rajkovic-Dusan-HMTL-CSS/images/anteprima-portfolio.png">
+
 </head>
   <body>
 
     <section class="top-nav" id="navbar-link">
       <div class="logo-container">
-        <a href="index.html"><img class="logo" src="images/dr-logo.png" alt=""></a>
+        <a href="index.html"><img class="logo" src="assets/images/dr-logo.png" alt="my photo in memoji style"></a>
       </div>
       <input id="menu-toggle" type="checkbox" />
       <label class='menu-button-container' for="menu-toggle">
@@ -32,10 +48,10 @@
       <li><a class="home-link" href="#passion-link">passion</a></li>
         <li style="z-index: 10;"> 
           <div class="social-links">
-          <a href="https://www.instagram.com/_dusan.rajkovic_/" target="_blank"><img class="instagram" src="images/Social-Icon/instagram.svg" alt="link to my instagram account"></a>
-          <a href="https://www.linkedin.com/in/dusanrajkovic26" target="_blank"><img class="linkedin" src="images/Social-Icon/linkedin.svg" alt="link to my linkedin account"></a>
-          <a href="https://github.com/dusan39" target="_blank"><img class="github" src="images/Social-Icon/github.svg" alt="link to my github account"></a>
-          <a href="mailto:dusanrajkovic26@gmail.com"><img class="mail" src="images/Social-Icon/gmail.svg" alt="link to my personal mail"></a>
+          <a href="https://www.instagram.com/_dusan.rajkovic_/" target="_blank" rel="noopener"><img class="instagram" src="assets/images/Social-Icon/instagram.svg" alt="link to my instagram account"></a>
+          <a href="https://www.linkedin.com/in/dusanrajkovic26" target="_blank" rel="noopener"><img class="linkedin" src="assets/images/Social-Icon/linkedin.svg" alt="link to my linkedin account"></a>
+          <a href="https://github.com/dusan39" target="_blank" rel="noopener"><img class="github" src="assets/images/Social-Icon/github.svg" alt="link to my github account"></a>
+          <a href="mailto:dusanrajkovic26@gmail.com"><img class="mail" src="assets/images/Social-Icon/gmail.svg" alt="link to my personal mail"></a>
           </div>  
         </li> 
       </ul>
@@ -49,7 +65,7 @@
       <div class="education">
         <h3 class="education-title">Education</h3>
         <p>
-          I studied at <a class="itis" href="https://www.cerebotani.it/joomla/index.php/il-nostro-istituto-01/il-nostro-istituto-02" target="_blank">I.I.S Luigi Cerebotani</a> an Industrial Technical Institute with an IT specialization for five years from 2015 to 2020 in Lonato del Garda(BS) , the principal programming languages i studied was: <br>
+          I studied at <a class="itis" href="https://www.cerebotani.it/joomla/index.php/il-nostro-istituto-01/il-nostro-istituto-02" target="_blank" rel="noopener">I.I.S Luigi Cerebotani</a> an Industrial Technical Institute with an IT specialization for five years from 2015 to 2020 in Lonato del Garda(BS) , the principal programming languages i studied was: <br>
         </p>
           <ul class="list-group list-group-flush">
             <li class="list-group-item" style="z-index: 1;">Java</li>
@@ -64,14 +80,14 @@
       <div class="experience" id="experience-link">
         <h3 class="experience-title">Experience</h3>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item" style="padding-bottom: 3%; background-color: #fafafa;">
-            My first position was in <a href="https://www.agricam.it/chi-siamo/" target="_blank" class="agricam">Agricam</a>, 2021-2022. <br>
+          <li class="list-group-item" id="experience-list">
+            My first position was in <a href="https://www.agricam.it/chi-siamo/" target="_blank" rel="noopener" class="agricam">Agricam</a>, 2021-2022. <br>
             I worked on the database section of this big company in the agricultural sector, I was a shared resource between Agricam and AssistInformatica a software house that provides the management software, they helped me to use SQL, Apex Oracle and PL/SQL.
             Beyond this I used to take all the software or hardware problems that I could solve with my skills in the company. 
           </li>
         
-          <li class="list-group-item" style="padding-top: 3%; background-color: #fafafa;">
-          My actually position is <a class="nomos" href="https://www.nomos.biz/" target="_blank">Nomos</a>, 2022-Present. <br>
+          <li class="list-group-item" id="experience-list">
+          My actually position is <a class="nomos" href="https://www.nomos.biz/" rel="noopener" target="_blank">Nomos</a>, 2022-Present. <br>
           My role in this software house is software tester and customer service, here I have the opportunity to ask some tips to senior developers and junior developers, it's good for me because I can learn more from them watching and listening when they talk about how they can improve the software both frontend and backend. <br>
           Another task is to manage the database of clients, to remove some obsolete data or add new data.
         </li>

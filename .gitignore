@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# File temporanei del mac per la visualizzazione custom delle cartelle
+.DS_store

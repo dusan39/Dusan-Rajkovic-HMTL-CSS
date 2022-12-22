@@ -79,6 +79,10 @@
   padding-top: 3%;
 }
 
+.cv-description{
+  margin-bottom: 0;
+}
+
 .more-about-me{
   margin-top: 0 !important;
 }
@@ -145,6 +149,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#rest{
+  background-color: #00366F;
+  color: white;
+}
+
+#S2I{
+  background-color: #00B3B6;
+  color: white;
+}
+
+#work{
+  background-color: #0089A7;
+  color: white;
+}
+
+#fun{
+  background-color: #005F90;
+  color: white;
+}
+
+#percentual{
+  margin-left: 50px;
 }
 
 .routine-description{
