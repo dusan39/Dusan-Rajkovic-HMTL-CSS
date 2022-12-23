@@ -592,6 +592,10 @@ footer{
 
 /* Media query for tablet */
 @media (min-width:426px) and (max-width:870px){
+  .memoji{
+    width: 300px !important;
+  }
+  
   .resume{
     padding: 20px 8%;
   }
@@ -673,7 +677,7 @@ footer{
   }
 
   .memoji{
-    width: 300px;
+    width: 250px !important;
   }
 
   .text-center{
