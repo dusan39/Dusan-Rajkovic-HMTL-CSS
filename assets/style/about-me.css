@@ -60,16 +60,16 @@
 
 @media (min-width: 426px) and (max-width: 870px) {
   .technology,
-.car,
-.sport {
+  .car,
+  .sport {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   #tech,
-#audi-a3,
-#bernabeu {
+  #audi-a3,
+  #bernabeu {
     width: 50%;
     height: auto;
     border-radius: 5px;
@@ -79,16 +79,16 @@
 }
 @media (max-width: 425px) {
   .technology,
-.car,
-.sport {
+  .car,
+  .sport {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   #tech,
-#audi-a3,
-#bernabeu {
+  #audi-a3,
+  #bernabeu {
     width: 50%;
     height: auto;
     border-radius: 5px;
